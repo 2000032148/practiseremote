@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::TGSRTC BUSPASS::</title>
+</head>
+<body>
+    <center>
+        <h1>TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+        <h2>GENERAL BUS PASS APPLICATION</h2>
+        <form action="../BusPass/sucessful.html">
+            
+                <fieldset>
+                    <legend>Applicant Details</legend>
+                    
+                        <label for="name">Name: </label>
+                    
+                    <input type="text" maxlength="20" id="name" required placeholder="name" pattern="[a-zA-Z]+">
+                    
+                        <label for="dob">Date of Birth: </label>
+
+                    
+                    
+                        <input type="date" id="dob" required><br>
+                    
+                    
+                        <label for="phno">Mobile No :</label>
+                    
+                    
+                        <input type="number" id="phno" placeholder="Mobile Number" pattern="[0-9]+">
+                        <label for="fname">Father Name :</label>
+                        <input type="text" id="fname" placeholder="Father Name"><br>
+                        <label for="adhar">Adhar No :</label>
+                        <input type="number" id="adhar" placeholder="adhar no">
+                        <label for="email">Email ID</label>
+                        <input type="email" id="email" placeholder="email ID" (?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}>
+                
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Residental Address</legend>
+                    <dl>
+                        <dt><label for="rad">Residental Address</label></dt>
+                        <dd><input type="text" id="rad"></dd>
+                        <dt><label for="pin">Pincode</label></dt>
+                        <dd><input type="number" id="pin"></dd>
+                    </dl>
+                </fieldset>
+                <fieldset>
+                    <legend>Pass Type Details</legend>
+                    <dt><label for="city">City</label></dt>
+                    <dd>
+                        <select name="city" id="city">
+
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="warangal">Warangal</option>
+                        </select>
+
+                    </dd>
+                    <dt><label for="type">Pass Type</label></dt>
+                    <dd>
+                        <select name="type" id="type">
+                            <option value="greater pass">Greater Pass</option>
+                            <option value="general ordinary route pass">General Ordinary route Pass</option>
+                        </select>
+                    </dd>
+                </fieldset>
+
+                <input type="submit" value="submit">
+            
+        </form>
+    </center>
+    
+</body>
+</html>
